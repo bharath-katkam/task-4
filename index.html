@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+ 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color:black;
+}
+
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: inline-block;
+  margin-left:30px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-item {
+  border-radius:10px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 200px;
+  font-size: 24px;
+}
+.scroll-container {
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
+
+header{
+
+font-family: "Arial", sans-serif;
+color:#6da2f2;
+display:flex;
+height:40px;
+border-bottom: 17px solid #f2f0f0;
+background-color:white;
+font-size:25px;
+justify-content:space-between;
+}
+.link-without-underline {
+text-decoration: none;
+}
+.intro{
+display:flex;
+}
+.about{
+margin:10px;
+}
+.home{
+margin:10px;
+}
+.actions{
+display:flex;
+ 
+margin:10px;
+}
+.login{
+margin-right:20px;
+}
+.register{
+margin-right:5px;
+}
+.most{
+display:flex;
+justify-content:center;
+margin-left:200px;
+margin-right:200px;
+width=100%;
+height:250px;
+}
+.most-bg{
+background-color:white;
+margin:0 80px;
+}
+.most-product{
+margin-right:10px;
+}
+.most-searched{
+margin-top:0;
+text-align:center;
+ background: linear-gradient(to right, #d472db, #3722bd);
+      -webkit-background-clip: text;
+      color: transparent;
+}
+footer{
+display:flex;
+justify-content:center;
+margin-left:200px;
+margin-right:200px;
+}
+.product-guide{
+background-color:yellow;
+height:300px;
+width:300px;
+margin-right:10px;
+}
+.travel-guide{
+background-color:yellow;
+height:300px;
+width:300px;
+margin-left:10px;
+}
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  
+} 
+
+div.absolute {
+  background-color:blue;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid white;
+}
+div.a {
+  background-color:yellow;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid white;
+}
+div.b {
+  background-color:green;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid white;
+}
+</style>
+</head>
+<body>
+<header>
+
+<div class="intro">
+
+<div class="home">
+<a href="index.html" class="link-without-underline">Home</a>
+</div>
+<div class="about">
+<a href="#" class="link-without-underline">About</a>
+</div>
+</div>
+<div class="actions">
+<div class="login">
+<a href="login.html"class="link-without-underline">Login</a>
+</div>
+<div class="register">
+<a href="register.html"class="link-without-underline">Register</a>
+</div>
+</div>
+</header>
+<div class="most-bg">
+<h1 class="most-searched">Most searched storecode today!<h1>
+<div class="most">
+ <div class="most-product">
+  <div class="relative">
+  <div class="absolute"></div>
+  <div class="a"></div>
+  <div class="b">
+  <h4 align="center">Product</h4>
+</div>
+  </div>
+</div>
+<div class="travel">
+ <div class="relative">
+  <div class="absolute"></div>
+  <div class="a"></div>
+  <div class="b">
+  <h4 align="center">Travel</h4>
+</div>
+  </div>
+</div>
+</div>
+</div>
+<h1 style="color: white;margin-left: 20px;">Top Influencers</h1>
+  <div class="scroll-container" id="scrollContainer">
+    <div class="scroll-content">
+      <div class="scroll-item">1</div>
+      <div class="scroll-item">2</div>
+      <div class="scroll-item">3</div>
+      <div class="scroll-item">4</div>
+      <div class="scroll-item">5</div>
+      <div class="scroll-item">6</div>
+      <div class="scroll-item">7</div>
+      <div class="scroll-item">8</div>
+      <div class="scroll-item">9</div>
+    </div>
+  </div>
+ <br><br>
+<h1 style="color: white;margin-left: 20px;">EXPLORE GUIDES</h1>
+ <footer>
+<div class="product-guide">
+<h3 align="center">Product guides<h3>
+</div>
+<div class="travel-guide">
+<h3 align="center">Travel guides<h3>
+</div>
+ </div>
+</footer>
+</body>
+</html>
